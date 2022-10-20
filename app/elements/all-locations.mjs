@@ -1,6 +1,6 @@
 export default function AllLocations({ html, state }) {
   console.log('in allLocations')
-  console.log(JSON.stringify(state, null, 2))
+  console.log(`state == ` + JSON.stringify(state, null, 2)) // state.store gets wiped with middleware
   const { store } = state
   const { locations='' } = store
 
